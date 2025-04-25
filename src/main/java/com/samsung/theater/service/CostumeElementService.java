@@ -9,9 +9,10 @@ public interface CostumeElementService {
 
     List<CostumeElement> getAll();
     CostumeElement getById();
-    List<CostumeElement> findByCostumeElementByColor(String color);
-    List<CostumeElement> findByCostumeElementByColorAndType(String color, CostumeElementType type);
+    List<CostumeElement> getCostumeElementByColor(String color);
+    List<CostumeElement> getCostumeElementByColorAndType(String color, CostumeElementType type);
     CostumeElement insert(CostumeElement costumeElement);
+    CostumeElement update(CostumeElement costumeElement);
     void delete(long id);
 
 }
