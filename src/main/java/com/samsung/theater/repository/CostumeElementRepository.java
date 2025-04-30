@@ -9,6 +9,8 @@ import java.util.List;
 
 @Repository
 public interface CostumeElementRepository extends JpaRepository<CostumeElement, Long> {
-    List<CostumeElement> findByCostumeElementByColor(String color);
-    List<CostumeElement> findByCostumeElementByColorAndType(String color, CostumeElementType type);
+
+
+    List<CostumeElement> findCostumeElementByColor(String color);
+    List<CostumeElement> findCostumeElementByColorAndType(String color, CostumeElementType type);
 }

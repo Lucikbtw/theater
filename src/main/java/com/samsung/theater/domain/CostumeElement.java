@@ -3,7 +3,6 @@ package com.samsung.theater.domain;
 import com.samsung.theater.domain.enums.CostumeElementType;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 @Data
 @Builder

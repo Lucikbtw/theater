@@ -30,27 +30,27 @@ public class CostumeElementCotrollerImpl implements CostumeElementController{
 
     @Override
     public List<CostumeElement> getCostumeElementByColor(String color) {
-        return List.of();
+        return costumeElementService.getCostumeElementByColor(color);
     }
 
     @Override
     public List<CostumeElement> getCostumeElementByColorAndType(String color, CostumeElementType type) {
-        return List.of();
+        return costumeElementService.getCostumeElementByColorAndType(color, type);
     }
 
     @Override
     public CostumeElement insert(CostumeElement costumeElement) {
-        return null;
+        return costumeElementService.insert(costumeElement);
     }
 
     @Override
     public CostumeElement update(CostumeElement costumeElement) {
-        return null;
+        return costumeElementService.update(costumeElement);
     }
 
     @Override
     public void delete(long id) {
-
+        costumeElementService.delete(id);
     }
 
 

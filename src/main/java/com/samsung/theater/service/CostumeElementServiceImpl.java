@@ -29,12 +29,12 @@ public class CostumeElementServiceImpl implements CostumeElementService {
 
     @Override
     public List<CostumeElement> getCostumeElementByColor(String color) {
-        return repository.findByCostumeElementByColor(color);
+        return repository.findCostumeElementByColor(color);
     }
 
     @Override
     public List<CostumeElement> getCostumeElementByColorAndType(String color, CostumeElementType type) {
-        return repository.findByCostumeElementByColorAndType(color, type);
+        return repository.findCostumeElementByColorAndType(color, type);
     }
 
     @Override
